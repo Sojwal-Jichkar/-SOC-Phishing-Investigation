@@ -1,0 +1,39 @@
+
+=================================================
+IOC REPORT - PHISHING INVESTIGATION
+=================================================
+Date: 23 May 2026
+Analyst: Sojwal Jichkar
+Severity: HIGH
+=================================================
+
+1. EXECUTIVE SUMMARY
+A phising email impersonating Docusign 
+was analyzed. The email attempts to steal 
+user credentials via a fake login page.
+
+2. ATTACK DETAILS
+From: no-reply@docsign-secure.com
+Subject:Secure Document-Please Review
+Target:Corporate email users
+
+3.IOC TABLE
+Domain: docusign-secure.com
+IP:185.199.108.153
+Email:no-reply@docusign-secure.com
+URL:http://secure-docverify.com/login
+
+4.ANALYSIS
+SPF:FAIL
+DKIM:FAIL
+DMARC:FAIL
+
+5.MITRE MAPPING
+Tactic:TA0001 Initial Access 
+Tech:T1566.002 Spearphishing Link
+
+6.RECOMMENDATIONS
+-BLOCK Sender domain immediately
+-Alert all user about this campaign
+-Elscalte to L2 for further analysis
+=======================================================

@@ -1,0 +1,50 @@
+==============================
+SOC INVESTIGATION NOTE - ##01
+===============================
+Date: 23 May 2026
+Analyst: Sojwal Jichkar
+=================================
+
+EMAIL DETAILS
+FROM  : no-reply@docusign-secure.com
+To    : victim@gmail.com
+Subject: Secure Document - Please Review
+Sending IP: 185.199.108.153
+
+MXTOOLS ANALYSIS USED FOR INVESTIGATION
+
+SPF      : FAIL
+DKIM     : FAIL
+DMARC    : FAIL
+
+VERDICT
+This email is CONFIRMED PHISHING
+Sender domain docusign-secure.com
+is spoofing the real docusign.com
+
+
+MITRE MAPPING
+Tactic   : TA0001 Initial Access
+Technique: T1566.002 Spearphishing Link
+
+ACTION
+Block sender domain : YES
+Block sending IP    : YES
+Alert users         : YES
+Escalate to L2      : YES
+================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=======================
