@@ -1,0 +1,61 @@
+=======================================
+SIMULATED EMAIL HEADER — TRAINING EXERCISE
+This is a constructed example built for portfolio
+practice. It does not represent a captured
+real-world email.
+=======================================
+Date: 23 May 2026
+Analyst: Sojwal Jichkar
+=======================================
+RAW HEADER (simulated):
+
+Delivered-To: victim@gmail.com
+Received: from mail.secure-docverify.com (mail.secure-docverify.com [203.0.113.55])
+        by mx.gmail.com with ESMTP id a4kp7731902qta.214.2026.05.23.09.12.07
+        for <victim@gmail.com>;
+        Fri, 23 May 2026 09:12:07 -0700 (PDT)
+Received-SPF: fail (google.com: domain of no-reply@docusign-secure.com
+        does not designate 203.0.113.55 as permitted sender)
+        client-ip=203.0.113.55;
+Authentication-Results: mx.gmail.com;
+        dkim=fail (bad signature) header.i=@docusign-secure.com;
+        spf=fail (google.com: domain of no-reply@docusign-secure.com
+        does not designate 203.0.113.55 as permitted sender)
+        header.from=no-reply@docusign-secure.com;
+        dmarc=fail (p=REJECT) header.from=docusign-secure.com;
+From: "DocuSign Team" <no-reply@docusign-secure.com>
+To: victim@gmail.com
+Subject: Secure Document - Please Review
+Date: Fri, 23 May 2026 09:12:00 -0700
+Message-ID: <f3a9c61e0d8b4f2a@docusign-secure.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+X-Mailer: Microsoft Outlook 16.0
+
+=======================================
+ANALYSIS NOTES
+=======================================
+- SPF, DKIM, and DMARC all FAIL: the receiving mail
+  server explicitly states the sender domain did not
+  authorize this message to be sent. This confirms
+  spoofing, not a legitimate DocuSign email.
+- "docusign-secure.com" is a look-alike domain, not
+  the real docusign.com. This matches MITRE ATT&CK
+  T1036.005 (Match Legitimate Name or Location).
+- The sending IP 203.0.113.55 is a documentation/
+  example address (RFC 5737 TEST-NET-3 range), used
+  here in place of a real attacker IP since this
+  email is a simulated exercise, not a captured
+  real-world sample.
+=======================================
+
+
+
+
+
+
+
+
+
+
+
